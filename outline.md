@@ -1,23 +1,22 @@
-# Python Fundamentals Tutorial
+# Data Structure Tutorial
 ## I. Welcome
 * Introduction
-* Contact Information
-## II. Conditionals
+## II. Stack
 * Introduction
-* Boolean Expressions
-* Multiple Conditions
+* Adding to a Stack
+* Rmoving from a stack
 * Example
 * Problem to Solve
-## III. Loops
+## III. Set
 * Introduction
-* For Loops (Iterators)
-* Using Range with For Loops
-* While Loops
+* Hashing
+* Dealing with Repets
 * Example
 * Problem to Solve
-## IV. Functions
+## IV. Trees
 * Introduction
-* Structure of a Python Function
-* Organizing Functions
+* Adding and Removing items
+* Searching
+* Size and Balanceing
 * Example
 * Problem to Solve
