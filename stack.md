@@ -110,7 +110,7 @@ while(len(stack_of_words)): #Check if the stack is empty
 
 Ha! Now it's your turn. What could I have you do? I know. Write a program that will let the user build their own stack, it needs to have 2 options for the user. They must be able to push and pop you need to add protection to make sure that the list is not empty and give them an option to quit the program at any time.  
 
-[Soultion](./stack%20files/ProblemSoultion.py)
+[Solution](./stack%20files/ProblemSolution.py)
 
 [Back to Outline Page](outline.md)
 
