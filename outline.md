@@ -1,7 +1,7 @@
 # Data Structure Tutorial
 ## I. Welcome
 * Introduction
-## II. Stack
+## II. [Stack](stack.md)
 * Introduction
 * Adding to a Stack
 * Rmoving from a stack
