@@ -58,7 +58,7 @@ Move F
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| A | B | D | E | F |  |  |
+| A | B | D | E | F | [empty] |  |
 
 Wow. Now wasn't that a pain, something that only took one line of code took that computer 4 commands to do. This will get bigger and bigger as the list grows. Just by only touching the beginning and the end, it is much easier for the stack to grow and shrink. 
 
