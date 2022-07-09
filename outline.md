@@ -1,19 +1,20 @@
 # Data Structure Tutorial
 ## I. Welcome
 * Introduction
-## II. [Stack](stack.md)
+## II. [Stack](./stack.md)
 * Introduction
 * Adding to a Stack
 * Rmoving from a stack
 * Example
 * Problem to Solve
-## III. Set
+## III. [Set](./set.md)
 * Introduction
-* Hashing
-* Dealing with Repets
+* Adding and removing from the Set
+* Performance
+* Other Commands
 * Example
 * Problem to Solve
-## IV. Trees
+## IV. [Trees](./tree.md)
 * Introduction
 * Adding and Removing items
 * Searching
