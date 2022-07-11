@@ -108,7 +108,7 @@ while(len(stack_of_words)): #Check if the stack is empty
 
 ## Problem to Solve
 
-Ha! Now it's your turn. What could I have you do? I know. Write a program that will let the user build their own stack, it needs to have 2 options for the user. They must be able to push and pop you need to add protection to make sure that the list is not empty and give them an option to quit the program at any time.  
+Ha! Now it's your turn. What could I have you do? I know. Write a program that will let the user keep track of old dice rolls. Have them enter in each roll that they get and then let them undo a role when needed. 
 
 [Solution](./stack%20files/ProblemSolution.py)
 
