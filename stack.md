@@ -65,12 +65,12 @@ Wow. Now wasn't that a pain, something that only took one line of code took that
 ## Other Commands
 There are a few other commands that you ought to know about stacks, the great thing about all of these commands is that they are not hiding any extra commands under the hood, unlike the remove command that we just learned about. 
 
-| Name | Description | Command |
-|:-----:|:-----:|:-----:|
-|Size of | This will return the number of items in the stack | len(my_stack) |
-| Is empty | Returns if there is anything in the stack | if ( len( my_stack) == 0) |
-| push | adds the data to the end of the stack | my_stack.append(data) |
-| pop | removes the last pushed data and returns it | the_data = my_stack.pop() |
+| Name | Description | Command |Performance|
+|:-----:|:-----:|:-----:|:---:|
+|Size of | This will return the number of items in the stack | len(my_stack) |O(1)|
+| Is empty | Returns if there is anything in the stack | if ( len( my_stack) == 0) |O(1)|
+| push | adds the data to the end of the stack | my_stack.append(data) |O(1)|
+| pop | removes the last pushed data and returns it | the_data = my_stack.pop() |O(1)|
 
 ## Example
 
