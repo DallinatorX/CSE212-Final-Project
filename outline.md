@@ -16,8 +16,8 @@
 * Problem to Solve
 ## IV. [Trees](./tree.md)
 * Introduction
-* Adding and Removing items
-* Searching
-* Size and Balanceing
+* Adding to the Tree
+* Performance
+* Other Commands
 * Example
 * Problem to Solve
