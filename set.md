@@ -6,6 +6,8 @@ Anyways, a set is a way to store data(surprise surprise) unlike other data struc
 ## Adding and removing from the Set
 Adding data to a set works a bit differently than in other data structures. When a value is added the set creates a unique hash for that value. This is an address in memory. If the same value is entered again, the same hash will be given and only one copy will be stored.  When removing, the same hash is calculated, the data is found and then the data is deleted.  
 
+When adding hashes there is a very large number of locations, for example, if you hash "f" you may get -1749050908375269223, and hashing "a" may get you 8181452826079060158. While these numbers may work great, that would take a lot of space for one set. This will need to be reduced to a smaller list. This can be done with modules. Let's say we wanted a very small set we could do %10 and then "f" would be 3 and "a" would be 8.
+
 Let's look at an example of a list and a set. 
 
 <u>List:</u>
@@ -95,6 +97,24 @@ set.remove(C)
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |A | | || |F |G||
 
+## Conflicts
+
+Now while the odds of getting the same number are slim, as you start getting more and more data it may happen. In this case, we do not want to have the original data overwritten. We will have to deal with the conflict. There are 2 ways of dealing with a conflict. The first is to just put it in the next available address. For example, let's say we added "I" to the last example. It would have the same address as A so it would be placed on the right side of "A".
+
+|0|1|2|3|4|5|6|7|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|A | I | || |F |G||
+
+ This can lead to more conflicts, so it is often not considered the best option.  
+
+the other option is to use a list in each of these places, that way it will not go into the next set of data. 
+
+|0|1|2|3|4|5|6|7|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|[A, I] |  | || |F |G||
+
+Now while this does slow down the performance of a set, it is considered infrequent enough that we can ignore it and move on. 
+
 ## Performance
 One of the major advantages of using a set is that finding a value will only take one operation. The value is hashed and the code only has to look in that one spot. In a list, the given value would be compared to the first value in the list, and then the second and the third. This would keep going until the value is found or it reaches the end of the list. This works fine for smaller amounts of data, but as it grows larger and larger this will take more and more time. In a set the number of entries does not matter, it will only take one operation to find if the value is in the set.
 
@@ -129,7 +149,7 @@ True
 |member|Returns if the given value is in the set|(value in set)|O(1)|
 |size|Returns the number of values in the set|len(my_set)|O(1)|
 ## Example
-You are an avid stamp collector, however, you live in a small one-room apartment that has no space and even one extra stamp can not be afforded. To keep it clean you decide to wright a program to see if you have any duplicates.
+You are an avid stamp collector, however, you live in a small one-room apartment that has no space and even one extra stamp can not be afforded. To keep it clean you decide to wright a program to see if you have any duplicates. Each time that you add a stamp it is tested if it is in the set it returns that it is in the set, if not it adds it to the set.
 
 ```python
 def check_for_duplicates(the_set, check_value):

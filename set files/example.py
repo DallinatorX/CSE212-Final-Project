@@ -1,9 +1,13 @@
 """
-You are an avid stamp collector, however, you live in 
-a small one-room apartment that has no space and even 
-one extra stamp can not be afforded. To keep it clean 
-you decide to wright a program to see if you have any 
-duplicates.
+You are an avid stamp collector, however, 
+you live in a small one-room apartment 
+that has no space and even one extra 
+stamp can not be afforded. To keep it 
+clean you decide to wright a program to 
+see if you have any duplicates. Each time 
+that you add a stamp it is tested if it is 
+in the set it returns that it is in the 
+set, if not it adds it to the set.
 """
 
 
