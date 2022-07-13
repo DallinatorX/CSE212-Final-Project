@@ -1,6 +1,6 @@
 # Data Structure Tutorial
 ## I. [Welcome](./welcome.md)
-* Introduction
+
 ## II. [Stack](./stack.md)
 * Introduction
 * Adding to a Stack
@@ -10,6 +10,7 @@
 ## III. [Set](./set.md)
 * Introduction
 * Adding and removing from the Set
+* Conflicts
 * Performance
 * Other Commands
 * Example
