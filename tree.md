@@ -45,6 +45,8 @@ At that point, there is no performance gain over a list. In this case, the tree 
 
 
 
+## Recursion
+
 ## Other Commands
 
 Python does not have a built-in Tree class, so one will be provided for you to use. Because of this, the Python commands listed are not official, but the ones used for this class.
@@ -86,10 +88,8 @@ for x in Songs: #Return the songs in order
 
 ## Problem to Solve
 
-Expand the Tree class to find songs that are between a certain time. Let's say you wanted all songs between 90 and 300 seconds. You could call the function with those 2 inputs and it would return all of the songs in that time. Use the example as a starting templet. 
+Expand the Tree class to find songs that are between a certain time. Let's say you wanted all songs between 90 and 300 seconds. You could call the function with those 2 inputs and it would return all of the songs in that time. Use [this](./tree%20files/Problem.py) as your starting templet. And fill in the _find_songs_between function.
 
-```python
-```
 [Link to Problem](./tree%20files/Problem.py)
 
 [Link to Solution](./tree%20files/ProblemSolution.py)
