@@ -47,6 +47,18 @@ At that point, there is no performance gain over a list. In this case, the tree 
 
 ## Recursion
 
+One of the main advantages of using a tree is the use of recursive functions. Recursive functions work a little differently than other functions. Instead of just running its function it calls itself and can do this over and over again as needed. In the case of a tree this works well for us, we can start with the root and then call the next node and treat that as the new root. Let's look at a function from the class we are working with as an example.  This function will yield all of the nodes of the BST. 
+
+Let's say that you pass in the root to this function. As long as it is not empty it will pass the left node and the right node into the same function. This will keep going down the tree yeilding the names until it hits the bottom of the BST.
+
+```python
+    def _traverse_forward(self, node):
+        if node is not None:
+            yield from self._traverse_forward(node.left)
+            yield node.name
+            yield from self._traverse_forward(node.right)
+```
+
 ## Other Commands
 
 Python does not have a built-in Tree class, so one will be provided for you to use. Because of this, the Python commands listed are not official, but the ones used for this class.
