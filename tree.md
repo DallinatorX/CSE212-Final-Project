@@ -8,7 +8,7 @@ The easiest comparison to the tree data structure is a Family tree. If you think
 
 ## Adding to the Tree
 
-When a Tree is created the first value is called the Root. Each time that a new value is added it goes through tests. It is first asked if it is larger or smaller than the root. If larger it goes down one side if smaller then it goes down the other side. At the next value (node) the same question is asked. This process continues until the value finds a spot that is empty and the data is stored there. 
+When a Binary Seach Tree (BST) is created the first value is called the Root. Each time that a new value is added it goes through tests. It is first asked if it is larger or smaller than the root. If larger it goes down one side if smaller then it goes down the other side. At the next value (node) the same question is asked. This process continues until the value finds a spot that is empty and the data is stored there. 
 
 Let's look at an example of this. We will start a tree with a value of 5.
 
@@ -34,7 +34,7 @@ As you can see, each time that a value is added to the tree, the tree expands.
 
 ## Performance
 
-Using a Binary Seach Tree(BST) can often lead to performance gains. Rather than having to look through every value in a list, it can just search left and right in the same manner that you would add data to the Tree. Now because you are such a smarty pants, you have probably already thought of a problem. What if you add values in order. For example, 3,4,5,6,7,8,9.
+Using a BST can often lead to performance gains. Rather than having to look through every value in a list, it can just search left and right in the same manner that you would add data to the Tree. Now because you are such a smarty pants, you have probably already thought of a problem. What if you add values in order. For example, 3,4,5,6,7,8,9.
 
 ![Unblanced Tree](./tree%20files/Photo6.png)
 
@@ -62,12 +62,31 @@ Python does not have a built-in Tree class, so one will be provided for you to u
 
 ## Example
 
+You have a large collection of sheet music and you want to have it all organized. You decided that a tree is good for this. The example will use the length of the song as the value in the tree. This way we know how to find it based on the length of the song.
+
 ```python
+Songs = BST() #Create the Tree
+
+keep_going = True
+#Keep going until quit
+while(keep_going): #Keep going until quit
+    again = input ("Add a song (Y/N): ")
+    if again == "Y": #If yes
+        name = input("What is the Name: ")
+        length = int(input("How long is the song in Seconds: "))
+        Songs.insert(length, name) #Add the song to the tree
+        print("\n\n")
+    if again == "N": #Quit if no
+        keep_going = False
+for x in Songs: #Return the songs in order
+    print(x)
 ```
 
 [Link to the File](./tree%20files/example.py)
 
 ## Problem to Solve
+
+Expand the Tree class to find songs that are between a certain time. Let's say you wanted all songs between 90 and 300 seconds. You could call the function with those 2 inputs and it would return all of the songs in that time. Use the example as a starting templet. 
 
 ```python
 ```
